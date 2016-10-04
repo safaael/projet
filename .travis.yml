@@ -1,3 +1,10 @@
 language: ruby
 rvm:
 - 2.0.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: UcT0Ort7pDBjwxTxwqM7dr1wvcu44shg/vFbDsrDzUwb5XUgbQGcHC4ok+8swBPog75uz5XodoxBS3DduyuGM9ZkwmHo71pQRoaqpaCk+0j2KfHflOeKLrbYOuWScaUkJo0pl6YFvNlN9/MbNqn0GernSKHhUYYX3RmwMfxR6ryjh5qRKAkR3fdfAfWhXAEC+1a4P57QwjAd2OLhmzlmn4HqySjVu5UVqPDd0it0qXj7RABo/XT8P4zafTZMURi8FyWkSM/D987iESNJfpH7TSbhqwmKOqtJm/DZnFbkqm9YSr9ZaLFvxP2CEvlr9QSi9UPrhI61gAyro/ME8s6T4xeQyKaMlY/yFWW9wqqYRK0V7vlkQZSJKlX4+z1tdzRe+0mW8nRT6rcqzYatnogG02mm9ICgknBanyqhqibVF6By+gMCjT6H5giiJzz+EGUWANjM65Z8/82GXC/oqmpY93ekDXoN7KskpJhoHtu5n7b6M2RcAIa+jJ1dDxxfwNhzSJ9vqMuGwIHKt4HdoK0tdIPsIQRfLhad0roi9izDn+yo6zOfZW0DA1BGMTcMwdaR8iL3aJcKdTAQhHGNWfNt2nUrl3AhPGVMF2quzIGAdVXKPCFchWqCx4t0FEIFLXGHMoMJvx5CFeEeCixf8BQCRwy9xMMDaTPKTRpysJUjMG4=
+  app: gentle-peak-77971
+  on:
+    repo: safaael/projet
