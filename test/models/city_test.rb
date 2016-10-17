@@ -16,4 +16,12 @@ class CityTest < ActiveSupport::TestCase
    end
  end
 
-end
+test "should break on unknown city" do 
+     VCR.use_cassette("nominatim2") do 
+         city = City.new  name: @cityWrong.name 
+         city.save 
+         assert city.invalid? 
+     end 
+   end 
+
+end 

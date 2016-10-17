@@ -15,5 +15,24 @@
   <%= @city.lon %>
 </p>
 
+<p>
+  <strong>Temperature:</strong>
+  <%= @forecasts.temperature %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @weather.summary %>
+</p>
+
+<!--<p>
+  <strong>WindSpeed:</strong>
+  <#%= @weather.windSpeed %>
+</p>
+
+<p>
+  <strong>DewPonit:</strong>
+  <#%= @weather.dewPoint %>
+</p> -->
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>
