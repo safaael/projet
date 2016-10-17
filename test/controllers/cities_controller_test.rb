@@ -31,7 +31,7 @@ class CitiesControllerTest < ActionController::TestCase
   end
 
   test "should show city" do
-    VCR.use_cassette("nominatim") do
+    VCR.use_cassette("forecast_io") do
     get :show, id: @city
     assert_response :success
     end
