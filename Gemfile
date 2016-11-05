@@ -30,6 +30,7 @@ gem 'nominatim', '~> 0.0.6'
 gem 'forecast_io', '~> 2.0', '>= 2.0.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#gem 'angularjs-rails', '~> 1.5', '>= 1.5.6'
 
 # Use unicorn as the app server
 # gem 'unicorn'
