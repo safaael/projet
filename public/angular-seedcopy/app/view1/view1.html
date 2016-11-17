@@ -1,0 +1,19 @@
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.min.js"></script>
+
+<p>This is the partial for view 1.</p>
+
+<!-- {{"chaine1  "+"chaine2 "+3*5}} -->
+
+<ul>
+   
+  Search y: <input ng-model="$ctrl.query" />
+  
+  
+   <li ng-repeat="student in students | filter:$ctrl.query">
+     <span>{{student.name}}</span>
+     <p>{{student.surname}}</p>
+   <!--  <p>test</p>   si on l'ajoute ça n apparait pas dans filter -->
+   </li> 
+ </ul>
