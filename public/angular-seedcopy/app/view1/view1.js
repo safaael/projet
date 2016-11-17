@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.view1', ['ngRoute','ngResource'])
 
 .config(['$routeProvider', function($routeProvider) {
  $routeProvider.when('/view1', {
@@ -10,9 +10,9 @@ angular.module('myApp.view1', ['ngRoute'])
  
 }])
 
-/*.config(['$resourceProvider', function($resourceProvider) {
+.config(['$resourceProvider', function($resourceProvider) {
   $resourceProvider.defaults.stripTrailingSlashes = false;
-}]) */
+}]) 
 
 /*  .factory('Student', function($resource) {
     var Student = $resource('/students/:id.json', {id: '@id'});
