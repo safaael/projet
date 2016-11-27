@@ -11,19 +11,33 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :surname %><br>
-    <%= f.text_field :surname %>
-  </div>
-  <div class="field">
-    <%= f.label :birthday %><br>
-    <%= f.date_select :birthday %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div style="width:50%;margin-left:30px;margin-top:30px">
+  
+ <table class="table">
+    <tr>
+        <div class="field form-group">
+         <td> <%= f.label :name %></td>
+          <td > <%= f.text_field :name,class:"form-control" ,style:"width:60%;"%></td>
+        </div>
+    </tr>
+    <tr>
+        <div class="field">
+          <td> <%= f.label :surname %></td>
+          <td> <%= f.text_field :surname,class:"form-control" ,style:"width:60%;" %></td>
+        </div>
+    </tr>
+    <tr>  
+        <div class="field">
+          <td><%= f.label :birthday %></td>
+          <td> <%= f.date_select :birthday ,style:"width:60%;height:60px;"%></td>
+        </div>
+    </tr>
+    <tr>
+        <div class="actions">
+          <td></td> <td><%= f.submit class: 'btn-danger btn' %></td>
+        </div>
+    </tr>
+  </table>
+  
+ </div> 
 <% end %>

@@ -8,14 +8,18 @@ class City < ActiveRecord::Base
   
   
   def forecast_io
-    
-     forecast = ForecastIO.forecast(self.lat, self.lon, params: { units: 'si' }) 
-     results = {} 
- 	   results[:temperature] = forecast.currently.temperature 
-     results[:summary] = forecast.currently.summary 
-     #results[:windSpeed] = forecast.currently.windSpeed 
-     #results[:dewPoint] = forecast.currently.dewPoint
- 	  results 
+      if self.lat
+
+       forecast = ForecastIO.forecast(self.lat, self.lon, params: { units: 'si' }) 
+       results = {} 
+       results[:temperature] = forecast.currently.temperature 
+       results[:summary] = forecast.currently.summary 
+       #results[:windSpeed] = forecast.currently.windSpeed 
+       #results[:dewPoint] = forecast.currently.dewPoint
+      results 
+     else
+        'unknown'
+      end
    end 
   
   

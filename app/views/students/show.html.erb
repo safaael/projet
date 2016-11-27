@@ -1,17 +1,22 @@
+</br>
+</br>
+</br>
+<div style="margin-left:20px;">
+  
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<p style="margin-top:5px;margin-bottom:19px;">
+  <strong style="margin-right:72px;">Name:</strong>
   <%= @student.name %>
 </p>
 
-<p>
-  <strong>Surname:</strong>
+<p style="margin-bottom:19px;">
+  <strong style="margin-right:50px;">Surname:</strong>
   <%= @student.surname %>
 </p>
 
-<p>
-  <strong>Birthday:</strong>
+<p style="margin-bottom:25px;">
+  <strong style="margin-right:52px;">Birthday:</strong>
   <%= @student.birthday %>
 </p>
 <!--
@@ -20,5 +25,6 @@
   <#%= @student.major? %>
 </p> -->
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<%= link_to 'Edit', edit_student_path(@student) ,class:"btn btn-success",style:"margin-left:1px;width:121px;" %>
+<%= link_to 'Back', students_path ,class:"btn btn-warning" ,style:"width:121px;margin-left:8px;" %>
+</div>

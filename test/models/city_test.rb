@@ -24,4 +24,21 @@ test "should break on unknown city" do
      end 
    end 
 
+=begin
+test 'weather forecast' do 
+     VCR.use_cassette("weather") do
+       weather = cities(:one).forecast_io
+       puts weather  
+       assert weather
+     end
+  end
+
+test 'weather forecast unknow city' do 
+     VCR.use_cassette("weather2") do
+       weather = cities(:two).forecast_io
+       puts weather  
+       assert weather = "unknown"
+     end
+  end
+=end
 end 
