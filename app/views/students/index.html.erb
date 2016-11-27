@@ -20,9 +20,9 @@
             <td><%= student.name %></td>
             <td><%= student.surname %></td>
             <td><%= student.birthday %></td>
-            <td><%= link_to 'Show', student %></td>
-            <td><%= link_to 'Edit', edit_student_path(student) %></td>
-            <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Show', student,style:"color:#337ab7;" %></td>
+            <td><%= link_to 'Edit', edit_student_path(student),style:"color:#337ab7;" %></td>
+            <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } ,style:"color:#337ab7;"%></td>
           </tr>
         <% end %>
       </br>  
