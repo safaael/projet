@@ -10,3 +10,5 @@ deploy:
     repo: safaael/projet
 code_climate:
         repo_token: 8d9fd30dbef029091e771263ddeefc5a43a8d9ef59184c112a084cf678c15d40
+after_success:
+  - bundle exec codeclimate-test-reporter

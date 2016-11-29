@@ -1,6 +1,9 @@
 ENV['RAILS_ENV'] ||= 'test'
+require "simplecov"
+SimpleCov.start
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+
 
 VCR.configure do |config|
  config.cassette_library_dir = "fixtures/vcr_cassettes"
